@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Formulario Registro</title>
+    <link rel="stylesheet" href="../Styles/styleLobatos.css">
+</head>
+<body>
+    <div class="form">
+        <h1>Nuevo Miembro</h1>
+        <form name="form" method="post" action="../conect_bd/new_acount.php">
+            <div class="input-box">
+                <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombre completo">
+            </div>
+            <div class="input-box">
+                <input class="controls" type="text" name="apellido" id="apellido" placeholder="Apellidos">
+            </div>
+            <div class="input-box">
+                <input class="controls" type="text" name="dni" id="dni" placeholder="DNI">
+            </div>
+            <div class="input-box">
+                <input class="controls" type="date" name="F_nac" id="F_nac">
+            </div>
+            <div class="input-box">
+                <input class="controls" type="text" name="telefono" id="telefono" placeholder="Ej: 2964628252">
+            </div>
+            <div class="input-box">
+                <input class="controls" type="text" name="tutor" id="tutor" placeholder="Tutor Legal">
+            </div>
+            <div class="input-box">
+                <input class="controls" type="date" name="fecha_a" id="fecha_a">
+            </div>
+            <div class="input-box">
+                <select name="funcion" id="funcion" class="form-select" aria-label="Default select example">
+                    <option></option>
+                    <option>JP - Manada</option>
+                    <option>JP - Unidad</option>
+                    <option>JP - Caminante</option>
+                    <option>JP - Rover</option>
+                    <option>ED - Manada</option>
+                    <option>ED - Unidad</option>
+                    <option>ED - Caminante</option>
+                    <option>ED - Rover</option>
+                    <option>JR - Manada</option>
+                    <option>JR - Unidad</option>
+                    <option>JR - Caminante</option>
+                    <option>JR - Rover</option>
+                    <option>JG - Jefe de Grupo</option>
+                    <option>SJ - Sub-Jefe de Grupo</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <input class="controls" type="text" name="user" id="user" placeholder="Maximo 8 dígitos">
+            </div>
+            <div class="input-box">
+                <input class="controls" type="password" name="pass" id="pass" placeholder="Maximo 8 dígitos">
+            </div>
+            <div class="button_container">
+                <button type="submit" class="btn btn-success" form="form">Aceptar</button>
+                <button type="reset" class="btn btn-warning">Limpiar</button>
+                <button type="button" class="btn btn-danger" onclick="window.history.back();">Cancelar</button>
+            </div>
+        </div>
+    </form>
+    <script>
+        console.log('html')
+    </script>
+</body>
+</html>
