@@ -102,6 +102,12 @@ body {
   margin-bottom: 10px;
   margin-right: 0px;
 }
-.form .btn{
+.form .btn {
   margin-right: 120px;
+}
+.centerImg {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Toma el 100% de la altura de la ventana */
 }
