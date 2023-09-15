@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu principal</title>
     <link rel="stylesheet" href="../Styles/style.css">
 </head>
+
 <body>
     <div class="menu">
         <div class="toggle"><ion-icon name="share-social-outline"></ion-icon></div>
         <li style="--i:0;--clr:#1877f2;">
             <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-        </option>
+            </option>
         <li style="--i:1;--clr:#25d366;">
             <a href="#"><ion-icon name="reorder-four-outline"></ion-icon></a>
-        </option>
+            </option>
         <li style="--i:2;--clr:#1da1f2;">
             <a href="#"><ion-icon name="newspaper-outline"></ion-icon></a>
-        </option>
+            </option>
         <li style="--i:3;--clr:#ea4c89;">
-            <a href="../papelera/admin.html"><ion-icon name="cash-outline"></ion-icon></a>
-        </option>
+            <a href="../../papelera/admin.html"><ion-icon name="cash-outline"></ion-icon></a>
+            </option>
         <li style="--i:4;--clr:#0a66c2;">
             <a href="/www/Loguin.html"><ion-icon name="remove-outline"></ion-icon></a>
-        </option>
+            </option>
         <li style="--i:5;--clr:#c32aa3;">
             <a href="#"><ion-icon name="reorder-two-outline"></ion-icon></a>
-        </option>
+            </option>
         <li style="--i:6;--clr:#bd081c;">
             <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-        </option>
+            </option>
         <li style="--i:7;--clr:#ff0000;">
             <a href="#"><ion-icon name="reorder-three-outline"></ion-icon></a>
-        </option>
+            </option>
     </div>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -40,9 +42,10 @@
     <script>
         let toggle = document.querySelector('.toggle');
         let menu = document.querySelector('.menu');
-        toggle.onclick= function(){
+        toggle.onclick = function () {
             menu.classList.toggle('active')
         }
     </script>
 </body>
+
 </html>
